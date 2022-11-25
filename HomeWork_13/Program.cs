@@ -16,5 +16,5 @@ int [] GetArray(int size)
     return array1;
 }
 
-Console.Write(String.Join(", ",array));
+Console.Write("[" +String.Join(", ",array)+"]");
  
