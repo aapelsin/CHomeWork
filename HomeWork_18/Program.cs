@@ -15,7 +15,16 @@ double b2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите k2: ");
 double k2 = Convert.ToInt32(Console.ReadLine());
 
-double x = Math.Round((b2-b1)/(k1-k2), 1);
-double y = Math.Round((k1*x+b1), 1);
+if (k1 != k2)
+{
+    double x = Math.Round((b2-b1)/(k1-k2), 1);
+    double y = Math.Round((k1*x+b1), 1);
+    Console.Write("("+x+ "; "+y+")");
+}
+    
+    else
+    {
+        Console.Write("Прямые не пересекаются");
+    }
 
-Console.Write("("+x+ "; "+y+")");
+
